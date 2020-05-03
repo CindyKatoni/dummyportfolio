@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CK</title>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function openSlideMenu(){
+            document.getElementById('menu').style.width = '250px';
+            document.getElementById('content').style.marginLeft = '250px';
+        }
+        function closeSlideMenu(){
+            document.getElementById('menu').style.width = '0';
+            document.getElementById('content').style.marginLeft = '0';
+        }
+    </script>
+</head>
+<body>
+    <div id="content">
+        <span class="slide">
+          <a href="#" onclick="openSlideMenu()">
+            <i class="fas fa-bars"></i>
+          </a>
+        </span>
+        <div id="menu" class="nav">
+            <a href="#" class="close" onclick="closeSlideMenu()">
+                <i class="fas fa-times"></i>
+            </a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+
+        </div>
+    </div>
+
+
+
+
+    <!--Introduction Section-->
+    <section class="intro">
+        <h1>A Hybrid Product Designer and Engineer.</h1>
+        <a href="https://github.com/CindyKatoni" class="github" target="_blank">View Github</a>
+    </section>
+
+    <!--My Work-->
+    <section class="work">
+        <div class="port" id="portfolio">
+            <a href="#" class="portfolio__item">
+                <img src="franck-v-YKW0JjP7rlU-unsplash.jpg" alt="" class="portfolio__img">
+            </a>
+            <a href="#" class="portfolio__item">
+                <img src="oliur-8jSTB6NLmVQ-unsplash.jpg" alt="" class="portfolio__img">
+            </a>
+            <a href="#" class="portfolio__item">
+                <img src="screen-post-AmRjWx3b6ac-unsplash.jpg" alt="" class="portfolio__img">
+            </a>
+
+        </div>
+
+    </section>
+
+</body>
+</html>

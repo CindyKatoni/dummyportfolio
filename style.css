@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans:800');
+
+body {
+    font-family: 'Alegreya Sans', sans-serif;
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+.nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    opacity: .9;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.7s;
+}
+.nav a {
+    display: block;
+    padding: 20px 30px;
+    font-size: 25px;
+    text-decoration: none;
+    color: #ccc;
+}
+.nav a:hover {
+    color: #fff;
+    transition: 0.4s;
+}
+.nav .close {
+    position: absolute;
+    top: 0;
+    right: 22px;
+    margin-left: 50px;
+    font-size: 30px
+}
+.slide a {
+    color: #000;
+    font-size: 36px;
+}
+#content {
+    padding: 20px;
+    transition: margin-left 0.7s;
+    overflow: hidden;
+    width: 100%;
+}
+.intro a {
+    font-size: 20px;
+    color: black;
+}
+img {
+    display: block;
+    max-width: 100%;
+    min-height: 100%;
+}
+
+.port {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    height: 400px;
+    margin-top: 20px;
+}
+
+.portfolio__item {
+    background: grey;
+    overflow: hidden;
+}
+
+.portfolio__img {
+    transition:
+            transform 750ms cubic-bezier(.5, 0, .5, 1),
+            opacity 250ms linear;
+}
+
+.portfolio__item:focus {
+    position: relative;
+    z-index: 2;
+}
+
+.portfolio__img:hover,
+.portfolio__item:focus .portfolio__img  {
+    transform: scale(1.2);
+    opacity: .75;
+}
